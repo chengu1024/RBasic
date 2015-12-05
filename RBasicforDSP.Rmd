@@ -8,6 +8,23 @@ output:
     widescreen: yes
 ---
 
+## Who is Ning? {.smaller .columns-2 .left}
+
+網路公司分析師
+
+  * 廣告存貨分析  
+  * 廣告版位最適化分析  
+  * 粉絲團操作分析幫助Engagement提升兩倍  
+  * 新產品上線，分析使用者行為改變、產品動線  
+
+R Laides Co-Founder
+<p>
+<p>
+<p>
+<p>
+
+<img src='img/Ning.jpg' style='height: 200px'></img>
+
 # Ch01：為何要學 R 語言？
 ```{r setup, include=FALSE, cache=FALSE}
 library(knitr)
@@ -98,21 +115,31 @@ sessionInfo() %>% capture.output %>% cat(file = "sessionInfo.log", sep = "\n")
 - 在程式碼編輯區中輸入 `1 + ` 後按下 **Control + Enter**，檢查 命令列區
 - 在命令列區按下 **ESC** 中斷程式
 
+## 預設你的位置&編碼
+
+<img src='img/Location.png' style='height: 500px'></img>
+
+## 調整字型大小
+<img src='img/Font.png' style='height: 500px'></img>
+
 # Ch03 今天學完你一定會畫簡單Ubike的圖
 
 ## 讀取表格檔案
 - 下載範例資料
-  https://gitlab.com/agogomei/R_Lecture_20151205/raw/master/UbikeFebv1.csv
+  https://raw.githubusercontent.com/dspim/RBasic/gh-pages/UbikeFebBig5.csv
 - 利用`read.csv` 讀取 `csv` 檔 (一種以逗點分隔欄位的資料格式)    
 
 ```{r echo=T, eval=FALSE}
-# 可以使用R指令來下載
-url <- "https://gitlab.com/agogomei/R_Lecture_20151205/raw/master/UbikeFebv1.csv"
+# Mac Ubuntu請使用此R指令來下載此資料集
+url <- "https://raw.githubusercontent.com/dspim/RBasic/gh-pages/UbikeFebBig5.csv"
+# Windows 請使用此R指令來下載此資料集
+url <- "http://goo.gl/oqYrCU"
+
 download.file(url, destfile = "UbikeFeb.csv", method = "curl") # 把檔案另存成UbikeFeb.csv
 ```
 
 ```{r echo=T, eval=T, results="hide"}
-dat <- read.csv("../UbikeFeb.csv")
+dat <- read.csv("UbikeFeb.csv")
 ```
 
 

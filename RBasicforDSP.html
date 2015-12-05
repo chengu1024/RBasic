@@ -92,7 +92,30 @@
           </hgroup>
   </slide>
 
-<slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Ch01：為何要學 R 語言？</h2></hgroup><article  id="ch01-r-">
+<slide class=''><hgroup><h2>Who is Ning?</h2></hgroup><article  id="who-is-ning" class="smaller columns-2 left">
+
+<p>網路公司分析師</p>
+
+<ul>
+<li>廣告存貨分析<br/></li>
+<li>廣告版位最適化分析<br/></li>
+<li>粉絲團操作分析幫助Engagement提升兩倍<br/></li>
+<li>新產品上線，分析使用者行為改變、產品動線</li>
+</ul>
+
+R Laides Co-Founder
+
+<p>
+
+<p>
+
+<p>
+
+<p>
+
+<p><img src='img/Ning.jpg' style='height: 200px'></img></p>
+
+</article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Ch01：為何要學 R 語言？</h2></hgroup><article  id="ch01-r-">
 
 </article></slide><slide class=''><hgroup><h2>R 是專門為資料分析而設計的程式語言</h2></hgroup><article  id="r-" class="smaller centered">
 
@@ -213,20 +236,31 @@ R 可以執行大多數的統計計算、機器學習、資料採礦方法
 <li>在命令列區按下 <strong>ESC</strong> 中斷程式</li>
 </ul>
 
+</article></slide><slide class=''><hgroup><h2>預設你的位置&amp;編碼</h2></hgroup><article >
+
+<p><img src='img/Location.png' style='height: 500px'></img></p>
+
+</article></slide><slide class=''><hgroup><h2>調整字型大小</h2></hgroup><article >
+
+<p><img src='img/Font.png' style='height: 500px'></img></p>
+
 </article></slide><slide class='segue dark nobackground'><hgroup class = 'auto-fadein'><h2>Ch03 今天學完你一定會畫簡單Ubike的圖</h2></hgroup><article  id="ch03-ubike">
 
 </article></slide><slide class=''><hgroup><h2>讀取表格檔案</h2></hgroup><article >
 
 <ul>
-<li>下載範例資料 <a href='https://gitlab.com/agogomei/R_Lecture_20151205/raw/master/UbikeFebv1.csv' title=''>https://gitlab.com/agogomei/R_Lecture_20151205/raw/master/UbikeFebv1.csv</a></li>
+<li>下載範例資料 <a href='https://raw.githubusercontent.com/dspim/RBasic/gh-pages/UbikeFebBig5.csv' title=''>https://raw.githubusercontent.com/dspim/RBasic/gh-pages/UbikeFebBig5.csv</a></li>
 <li>利用<code>read.csv</code> 讀取 <code>csv</code> 檔 (一種以逗點分隔欄位的資料格式)</li>
 </ul>
 
-<pre class = 'prettyprint lang-r'># 可以使用R指令來下載
-url &lt;- &quot;https://gitlab.com/agogomei/R_Lecture_20151205/raw/master/UbikeFebv1.csv&quot;
+<pre class = 'prettyprint lang-r'># Mac Ubuntu請使用此R指令來下載此資料集
+url &lt;- &quot;https://raw.githubusercontent.com/dspim/RBasic/gh-pages/UbikeFebBig5.csv&quot;
+# Windows 請使用此R指令來下載此資料集
+url &lt;- &quot;http://goo.gl/oqYrCU&quot;
+
 download.file(url, destfile = &quot;UbikeFeb.csv&quot;, method = &quot;curl&quot;) # 把檔案另存成UbikeFeb.csv</pre>
 
-<pre class = 'prettyprint lang-r'>dat &lt;- read.csv(&quot;../UbikeFeb.csv&quot;)</pre>
+<pre class = 'prettyprint lang-r'>dat &lt;- read.csv(&quot;UbikeFeb.csv&quot;)</pre>
 
 </article></slide><slide class=''><hgroup><h2>讀取表格檔案</h2></hgroup><article  id="-1">
 
